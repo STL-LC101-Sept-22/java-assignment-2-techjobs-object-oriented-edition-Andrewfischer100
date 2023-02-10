@@ -29,6 +29,7 @@ public class JobTest {
         assertTrue(myJob.getEmployer() instanceof Employer);
 
 
+
     }
 
 }
