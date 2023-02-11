@@ -1,5 +1,6 @@
 package org.launchcode.techjobs.oo;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Job {
@@ -18,12 +19,23 @@ public class Job {
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
+    public String numToString(){
+        int i = getId();
+        String charNumbers = ("" + i);
+        return charNumbers;
+    };
+    public String toString() {
+       numToString();
+        if (employer == null) {
+            employer = "Data not available";
+        }
+       return "\n" + "ID: " + numToString() + "\n" + "Name: " + getName() + "\n" + "Employer: " + getEmployer() + "\n" + "Location: " + getLocation() + "\n"  + "Position Type: " + getPositionType() + "\n" + "Core Competency: " + getCoreCompetency() + "\n";
+    }
+
     public Job(){
         id = nextId;
         nextId++;
      };
-
-
 
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency){
         this();
@@ -32,11 +44,9 @@ public class Job {
         this.location = location;
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
+    };
 
 
-
-
-    }
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
