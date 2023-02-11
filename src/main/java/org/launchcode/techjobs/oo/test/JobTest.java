@@ -78,12 +78,12 @@ public class JobTest {
     @Test
     public void testToStringHandlesEmptyField(){
         Job newJob1 = new Job("", new Employer(), new Location(), new PositionType(), new CoreCompetency());
-        assertEquals("Data not available" , newJob1.getEmployer());
-        assertNotNull(Job.getName());
-        assertNotNull(newJob1.getEmployer());
-        assertNotNull(newJob1.getLocation());
-        assertNotNull(newJob1.getPositionType());
-        assertNotNull(newJob1.getCoreCompetency());
+        System.out.println(newJob1);;
+        assertEquals("Data not available", Job.getName());
+        assertEquals("Data not available", newJob1.getEmployer().getValue());
+        assertEquals("Data not available", newJob1.getLocation().getValue());
+        assertEquals("Data not available", newJob1.getPositionType().getValue());
+        assertEquals("Data not available", newJob1.getCoreCompetency().getValue());
 
     }
 

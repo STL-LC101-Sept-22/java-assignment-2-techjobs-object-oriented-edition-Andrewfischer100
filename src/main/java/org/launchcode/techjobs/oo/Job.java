@@ -1,5 +1,6 @@
 package org.launchcode.techjobs.oo;
 
+import javax.naming.Name;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -26,10 +27,11 @@ public class Job {
     };
     public String toString() {
        numToString();
-        if (employer == null) {
-            employer = "Data not available";
-        }
-       return "\n" + "ID: " + numToString() + "\n" + "Name: " + getName() + "\n" + "Employer: " + getEmployer() + "\n" + "Location: " + getLocation() + "\n"  + "Position Type: " + getPositionType() + "\n" + "Core Competency: " + getCoreCompetency() + "\n";
+
+       String employerValue = getEmployer().getValue();
+        if (employerValue == null){
+            employerValue = "Data Not Available";
+        }  return "\n" + "ID: " + numToString() + "\n" + "Name: " + getName() + "\n" + "Employer: " + getEmployer() + "\n" + "Location: " + getLocation() + "\n"  + "Position Type: " + getPositionType() + "\n" + "Core Competency: " + getCoreCompetency() + "\n";
     }
 
     public Job(){
@@ -44,6 +46,9 @@ public class Job {
         this.location = location;
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
+        if(name.equals("")){
+            this.name = "Data not available";
+        }
     };
 
 

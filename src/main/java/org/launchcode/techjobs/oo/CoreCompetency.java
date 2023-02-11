@@ -35,9 +35,11 @@ public class CoreCompetency {
 
     @Override
     public String toString() {
+        if(value == null){
+            this.value = "Data not available";
+        }
         return value;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
