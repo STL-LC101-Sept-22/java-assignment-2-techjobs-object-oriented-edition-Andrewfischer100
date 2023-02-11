@@ -26,10 +26,12 @@ public class JobTest {
         assertEquals(myJob.getLocation().getValue(), "Desert");
         assertEquals(myJob.getPositionType().getValue(), "Quality control");
         assertEquals(myJob.getCoreCompetency().getValue(), "Persistence");
+        assertTrue(myJob instanceof Job);
         assertTrue(myJob.getEmployer() instanceof Employer);
-
-
-
+        assertTrue(myJob.getLocation() instanceof Location);
+        assertTrue(myJob.getPositionType() instanceof PositionType);
+        assertTrue(myJob.getCoreCompetency() instanceof CoreCompetency);
     }
+
 
 }
