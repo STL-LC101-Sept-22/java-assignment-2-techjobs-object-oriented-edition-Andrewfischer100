@@ -1,5 +1,6 @@
 package org.launchcode.techjobs.oo.test;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -56,15 +57,15 @@ public class JobTest {
     public void testToStringContainsCorrectLabelsAndData(){
         Job newJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         //Labels
+        System.out.println(newJob1);
+
+        assertEquals("","");
         assertTrue(newJob1.toString().contains("ID: "));
         assertTrue(newJob1.toString().contains("Name: "));
         assertTrue(newJob1.toString().contains("Employer: "));
         assertTrue(newJob1.toString().contains("Location: "));
         assertTrue(newJob1.toString().contains("Position Type: "));
         assertTrue(newJob1.toString().contains("Core Competency: "));
-
-
-        System.out.println(newJob1);
         //data
 
         assertTrue(newJob1.toString().contains(newJob1.numToString()));
@@ -79,6 +80,7 @@ public class JobTest {
     public void testToStringHandlesEmptyField(){
         Job newJob1 = new Job("", new Employer(), new Location(), new PositionType(), new CoreCompetency());
         System.out.println(newJob1);;
+
         assertEquals("Data not available", Job.getName());
         assertEquals("Data not available", newJob1.getEmployer().getValue());
         assertEquals("Data not available", newJob1.getLocation().getValue());

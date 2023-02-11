@@ -27,11 +27,7 @@ public class Job {
     };
     public String toString() {
        numToString();
-
-       String employerValue = getEmployer().getValue();
-        if (employerValue == null){
-            employerValue = "Data Not Available";
-        }  return "\n" + "ID: " + numToString() + "\n" + "Name: " + getName() + "\n" + "Employer: " + getEmployer() + "\n" + "Location: " + getLocation() + "\n"  + "Position Type: " + getPositionType() + "\n" + "Core Competency: " + getCoreCompetency() + "\n";
+       return "\n" + "ID: " + numToString() + "\n" + "Name: " + getName() + "\n" + "Employer: " + getEmployer() + "\n" + "Location: " + getLocation() + "\n"  + "Position Type: " + getPositionType() + "\n" + "Core Competency: " + getCoreCompetency() + "\n";
     }
 
     public Job(){
