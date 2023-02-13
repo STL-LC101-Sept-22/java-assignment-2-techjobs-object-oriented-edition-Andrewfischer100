@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.launchcode.techjobs.oo.TestTaskFive" tests="12" skipped="0" failures="2" errors="0" timestamp="2023-02-12T23:39:32" hostname="Andrews-MacBook-Pro.local" time="0.23">
+  <properties/>
+  <testcase name="testTestToStringHandlesEmptyFieldCallsAssertions" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.078"/>
+  <testcase name="testTestToStringStartsAndEndsWithNewLineCallsAssertions" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.027">
+    <failure message="Missing 2 invocations to:&#10;org.junit.Assert#assertEquals(10L, 10L)" type="mockit.internal.expectations.invocation.MissingInvocation">Missing 2 invocations to:
+org.junit.Assert#assertEquals(10L, 10L)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: Missing invocations
+	at org.launchcode.techjobs.oo.TestTaskFive$2.&lt;init&gt;(TestTaskFive.java:56)
+	at org.launchcode.techjobs.oo.TestTaskFive.testTestToStringStartsAndEndsWithNewLineCallsAssertions(TestTaskFive.java:55)
+	... 1 more
+</failure>
+  </testcase>
+  <testcase name="testTestToStringStartsAndEndsWithNewLineExists" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.0"/>
+  <testcase name="testTestToStringContainsCorrectLabelsAndDataCallsToString" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.038"/>
+  <testcase name="testTestToStringContainsCorrectLabelsAndDataExists" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.0"/>
+  <testcase name="testToStringHandlesEmptyField" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.007">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;...Developer&#10;Employer: [Data not available&#10;Location: StL&#10;Position Type: Data not available]&#10;Core Competency: Ja...&gt; but was:&lt;...Developer&#10;Employer: [&#10;Location: StL&#10;Position Type: ]&#10;Core Competency: Ja...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...Developer
+Employer: [Data not available
+Location: StL
+Position Type: Data not available]
+Core Competency: Ja...&gt; but was:&lt;...Developer
+Employer: [
+Location: StL
+Position Type: ]
+Core Competency: Ja...&gt;
+	at org.launchcode.techjobs.oo.TestTaskFive.testToStringHandlesEmptyField(TestTaskFive.java:166)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <testcase name="testTestToStringContainsCorrectLabelsAndDataCallsAssertions" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.027"/>
+  <testcase name="testTestToStringStartsAndEndsWithNewLineCallsToString" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.025"/>
+  <testcase name="testToStringContainsCorrectLabelsAndData" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.001"/>
+  <testcase name="testToStringStartsAndEndsWithNewLine" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.0"/>
+  <testcase name="testTestToStringHandlesEmptyFieldCallsToString" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.025"/>
+  <testcase name="testTestToStringHandlesEmptyFieldExists" classname="org.launchcode.techjobs.oo.TestTaskFive" time="0.001"/>
+  <system-out><![CDATA[
+ID: 1
+Name: Data not available
+Employer: Data not available
+Location: Data not available
+Position Type: Data not available
+Core Competency: Data not available
+
+org.launchcode.techjobs.oo.Job@43419eb3
+
+ID: 4
+Name: Product tester
+Employer: ACME
+Location: Desert
+Position Type: Quality control
+Core Competency: Persistence
+
+org.launchcode.techjobs.oo.Job@641abbc9
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
