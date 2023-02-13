@@ -47,9 +47,11 @@ public class JobTest {
         Job newJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
         char firstLetter = newJob1.toString().charAt(0);
-
+        int lastint = newJob1.toString().length();
+        char lastLetter = newJob1.toString().charAt(lastint-1);
+ //       System.out.println((lastLetter -1) + ":)");
         assertEquals("\n", String.valueOf(firstLetter));
-        assertEquals(newJob1.toString().charAt(newJob1.toString().length()-1), newJob1.toString().charAt(0));
+        assertEquals("\n", String.valueOf(lastLetter));
 
     }
 

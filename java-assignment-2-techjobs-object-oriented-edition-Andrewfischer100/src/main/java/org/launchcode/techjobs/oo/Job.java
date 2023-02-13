@@ -45,10 +45,7 @@ public class Job {
         if(name.equals("")){
             this.name = "Data not available";
         }
-    };
-
-
-
+    }
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
     @Override
